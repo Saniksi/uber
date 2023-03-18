@@ -1,0 +1,49 @@
+.required 
+		padding: 68px 0 84px
+		&__title 
+			margin-top: 41px
+		&__box 
+			margin: 33px 0
+		&__box--nmb
+			margin-bottom: 0
+
+		&__box-title 
+			font-style: normal
+			font-weight: 400
+			font-size: 22px
+			line-height: 24px
+			color: #1CA8C3
+		
+
+		&__box-list
+			margin-top: 20px
+			color: #222222
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			text-align: left
+			font-weight: 300
+			list-style: none
+
+		&__box-item 
+			position: relative
+			margin-top: 10px
+			&::before
+				content: ""
+				position: absolute
+				top: 3px
+				left: -31px
+				display: inline-block	
+				width: 21px
+				height: 20px
+				background: url(../img/icons/check_blue.png) center center/cover no-repeat
+
+		&__box-description 
+			margin-top: 25px
+			color: #1ca8c3
+			font-weight: 300	
+		.warning
+			.required__box-title
+				color: $red-color
+			.required__box-item::before
+				background: url(../img/icons/check_red.png) center center/cover no-repeat

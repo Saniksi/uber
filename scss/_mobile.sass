@@ -1,0 +1,70 @@
+.mobile 
+	min-height: 864px
+	padding: 48px 0 61px
+	background: url(../img/bg/mobile_bg.jpg) center center/cover no-repeat
+	&__title
+		margin-top: 38px
+	&__subtitle
+		margin-top: 19px
+	.row
+		margin-top: 32px
+	&__item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		&--1
+			background: url(../img/bg/mobile_screen_1.jpg) center center/cover no-repeat
+		&--2
+			background: url(../img/bg/mobile_screen_2.jpg) center center/cover no-repeat
+		&--3
+			background: url(../img/bg/mobile_screen_3.jpg) center center/cover no-repeat
+		&--4
+			background: url(../img/bg/mobile_screen_4.jpg) center center/cover no-repeat
+		&--5
+			background: url(../img/bg/mobile_screen_5.jpg) center center/cover no-repeat
+		&--6
+			background: url(../img/bg/mobile_screen_6.jpg) center center/cover no-repeat
+		&-title
+			margin: 0 auto
+			width: 267px
+			color: #ffffff
+			font-size: 24px
+			font-weight: 400
+			text-align: center
+			text-transform: uppercase
+		&-plus
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%) 
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 26px
+			width: 26px
+			background-color: #000000
+			border-radius: 100%
+			cursor: pointer
+			&::before
+				content: ""
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: all 0.3s
+			&::after
+				content: ""
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $main-color
+				transition: all 0.3s
+			&:hover
+				&::before, &::after
+					background-color: $red-color
