@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'icons-font';
+  src: url('../fonts/icons-font.eot?v9z4wd');
+  src: url('../fonts/icons-font.eot?v9z4wd#iefix') format('embedded-opentype'),
+    url('../fonts/icons-font.ttf?v9z4wd') format('truetype'),
+    url('../fonts/icons-font.woff?v9z4wd') format('woff'),
+    url('../fonts/icons-font.svg?v9z4wd#icons-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icons-']::before,
+[class*=' icons-']::before {
+  /* Додаємо псевдоелемент ::before, щоб стилі не впливали на текст, коли добавляємо іконочний шрифт до тексту */
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  -ms-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga';
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icons-cloudy:before {
+  content: '\e906';
+  color: #ffffff;
+}
+.icons-home:before {
+  content: '\e905';
+}
+.icons-angellist:before {
+  content: '\e900';
+}
+.icons-bitcoin:before {
+  content: '\e901';
+  color: #f7931a;
+}
+.icons-blender:before {
+  content: '\e902';
+  color: #f5792a;
+}
+.icons-axe:before {
+  content: '\e903';
+}
+.icons-star:before {
+  content: '\e904';
+  color: red;
+  font-size: 60px;
+}
